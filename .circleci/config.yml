@@ -26,7 +26,9 @@ jobs:
                   TAG=0.1.$CIRCLE_BUILD_NUM
                   docker build -t casteljeremy/backspace-academy:$TAG .
                   docker run --rm -d -p 8080:8080 --name backspace casteljeremy/backspace-academy:$TAG
+                  date +%s
                   sleep 5
+                  date +%s
                   curl http://example.org
                   docker stop backspace
                   # echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
