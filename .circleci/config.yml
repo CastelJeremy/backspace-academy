@@ -27,7 +27,7 @@ jobs:
                   docker build -t casteljeremy/backspace-academy:$TAG .
                   docker run --rm -d -p 8080:8080 --name backspace casteljeremy/backspace-academy:$TAG
                   sleep 5
-                  curl http://localhost:8080
+                  curl http://example.org
                   docker stop backspace
                   # echo $DOCKER_PASS | docker login -u $DOCKER_USER --password-stdin
                   # docker push casteljeremy/backspace-academy:$TAG
