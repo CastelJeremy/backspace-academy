@@ -1,2 +1,3 @@
-# node-js-sample
-Sample NodeJS Express app
+# BackSpace Academy
+
+Sample NodeJS Express app to create, build and CI/CD a Docker.
