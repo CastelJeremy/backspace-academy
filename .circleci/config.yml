@@ -20,9 +20,6 @@ jobs:
             # Checkout the code as the first step.
             - checkout
 
-            - setup_remote_docker:
-                  docker_layer_caching: true
-
             - run: |
                   TAG=0.1.$CIRCLE_BUILD_NUM
                   docker build -t casteljeremy/backspace-academy:$TAG .
